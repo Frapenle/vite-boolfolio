@@ -1,9 +1,9 @@
 <script>
-import HomeComponent from './components/HomeComponent.vue';
+import ProjectComponent from './components/ProjectComponent.vue';
 export default {
   name: 'App',
   components: {
-    HomeComponent,
+    ProjectComponent,
   },
   data() {
     return {
@@ -14,10 +14,10 @@ export default {
 </script>
 
 <template>
-  <HomeComponent />
+  <ProjectComponent />
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 @use './styles/general.scss' as *;
 @use 'bootstrap/scss/bootstrap' as *;
 </style>
