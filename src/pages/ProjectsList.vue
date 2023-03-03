@@ -4,6 +4,9 @@ import CardComponent from '../components/CardComponent.vue';
 
 export default {
     name: "ProjectsList",
+    components: {
+        CardComponent,
+    },
     data() {
         return {
             projects: [],
