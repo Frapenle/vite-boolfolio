@@ -45,10 +45,13 @@ export default {
                 <h1>Projects</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row flex-wrap">
             <CardComponent v-for="project in projects" :project="project" />
         </div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@use './styles/general.scss' as *;
+@use 'bootstrap/scss/bootstrap' as *;
+</style>
