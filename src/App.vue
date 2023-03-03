@@ -16,7 +16,9 @@ export default {
 
 <template>
   <HeaderComponent />
-  <router-view></router-view>
+  <section class="container">
+    <router-view></router-view>
+  </section>
 </template>
 
 <style lang="scss">
