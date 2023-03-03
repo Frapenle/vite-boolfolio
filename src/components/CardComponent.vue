@@ -1,8 +1,7 @@
 <script>
-import { stringifyExpression } from '@vue/compiler-core';
 
 export default {
-    name: 'ProjectComponent',
+    name: 'CardComponent',
     data() {
         return {
 

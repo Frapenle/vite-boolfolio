@@ -3,7 +3,7 @@ import axios from 'axios';
 import CardComponent from '../components/CardComponent.vue';
 
 export default {
-    name: "ProjectComponent",
+    name: "ProjectsList",
     data() {
         return {
             projects: [],
