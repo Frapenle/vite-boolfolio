@@ -1,9 +1,10 @@
 <script>
-import ProjectComponent from './components/ProjectComponent.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+
 export default {
   name: 'App',
   components: {
-    ProjectComponent,
+    HeaderComponent,
   },
   data() {
     return {
@@ -14,7 +15,8 @@ export default {
 </script>
 
 <template>
-  <ProjectComponent />
+  <HeaderComponent />
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
