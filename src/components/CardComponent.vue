@@ -26,7 +26,7 @@ export default {
             <div class="card" style="width: 18rem; ">
                 <div class="images">
                     <img v-if="!project.preview.endsWith('placeholder-300x300.jpeg')"
-                        :src="'http://127.0.0.1:8000/storage/' + project.preview" class="img-fluid" :alt="project.name">
+                        :src="`http://127.0.0.1:8000/storage/${project.preview}`" class="img-fluid" :alt="project.name">
                     <img v-else :src="'http://127.0.0.1:8000/storage/img/uploads/placeholder-300x300.jpeg'"
                         class=" img-fluid" :alt="project.name">
                 </div>
@@ -34,7 +34,10 @@ export default {
                     <h5 class="card-title">Name: {{ project.name }}</h5>
                     <p class="card-text">Description: {{ project.description.substr(0, 150) }}...</p>
                 </div>
-                <div class="justify-content-end p-3"><a href="#" class="btn btn-primary disable">Open</a></div>
+                <div class="justify-content-end p-3">
+                    <router-link class="btn btn-primary disable"
+                        :to="{ name: 'project', params: { id: project.id } }">Open</router-link>
+                </div>
             </div>
         </div>
     </div>

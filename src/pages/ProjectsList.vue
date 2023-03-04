@@ -43,6 +43,8 @@ export default {
         <div class="row">
             <div class="col-12">
                 <h1>Projects</h1>
+                <h1>Single page: {{ this.$route.params.name }}</h1>
+
             </div>
         </div>
         <div class="row flex-wrap">
